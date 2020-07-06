@@ -10,8 +10,7 @@ class Formatter {
 
   static titleize(sentence){
     let exceptions = ["the", "a", "an", "but", "of", "and", "for", "at", "by", "from"];
-    let split = sentence.split(" ");
-    return split.map(word => {
+    return sentence.split(" ").map(word => {
       if (sentence.indexOf(word) == 0){
         return this.capitalize(word) 
       } else {
