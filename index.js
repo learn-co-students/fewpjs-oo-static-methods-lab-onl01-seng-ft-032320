@@ -10,7 +10,7 @@ class Formatter {
     return titleCase(strng)
   }
 }
-
+//my titlecase function
 function titleCase(str) {
   let newArray = []
   let lower = str.toLowerCase();
@@ -19,42 +19,13 @@ function titleCase(str) {
        if (x == array[0]) {
         return x.charAt(0).toUpperCase() + x.slice(1);
       }
-      if (x == "the") {
-        return x
-      }
-      if (x == "a") {
-        return x
-      }
-      if (x == "an") {
-        return x
-      }
-      if (x == "but") {
-        return x
-      }
-      if (x == "of") {
-        return x
-      }
-      if (x == "and") {
-        return x
-      }
-      if (x == "for") {
-        return x
-      }
-      if (x == "at") {
-        return x
-      }
-      if (x == "by") {
-        return x
-      }
-      if (x == "from") {
+      if (x == "the" || x == "a" || x == "an" || x == "but" || x == "of" || x == "and" || x == "for" || x == "at" || x == "by" || x == "from") {
         return x
       }
       else {
         return x.charAt(0).toUpperCase() + x.slice(1);
       }
-     
     }).join(' ')
   )
- 
   return newArray.join(' ')
 }
